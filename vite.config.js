@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/praktik_react_deploy/',
+  base: process.env.VERCEL ? '/' : '/praktik_react_deploy/',
 })
